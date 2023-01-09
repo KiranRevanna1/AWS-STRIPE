@@ -11,7 +11,7 @@ Once signed in, click the Developers link on the left.
 And hit API keys.
 <img src="https://imgur.com/ySDXEHO.png" alt="Homepage view 3" width=1000 height=500/>
 The first thing to note here is that we are working with a test version of API keys. To create the live version, you’d need to verify your email address and business details to activate your account. For the purpose of this guide we’ll continue working with our test version.
-
+<br/><br/>
 The second thing to note is that we need to generate the <b>Publishable key</b> and the <b>Secret key<b>. The Publishable key is what we are going to use in our frontend client with the Stripe SDK. And the Secret key is what we are going to use in our API when asking Stripe to charge our user. As denoted, the Publishable key is public while the Secret key needs to stay private.
 
 Hit the <b>Reveal test key token.<b>
@@ -83,7 +83,7 @@ Most of this is fairly straightforward but let’s go over it quickly:
 
 <li>We are using a `calculateCost(storage)` function (that we are going to add soon) to figure out how much to charge a user based on the number of notes that are going to be stored.
 
-<li><li>We create a new Stripe object using our Stripe Secret key. We are getting this from the environment variable that we configured in the previous chapter.
+<li>We create a new Stripe object using our Stripe Secret key. We are getting this from the environment variable that we configured in the previous chapter.
 
 <li>Finally, we use the `stripe.charges.create` method to charge the user and respond to the request if everything went through successfully.
 </ul>
