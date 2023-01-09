@@ -86,7 +86,7 @@ Most of this is fairly straightforward but let’s go over it quickly:
 <li><li>We create a new Stripe object using our Stripe Secret key. We are getting this from the environment variable that we configured in the previous chapter.
 
 <li>Finally, we use the `stripe.charges.create` method to charge the user and respond to the request if everything went through successfully.
-
+</ul>
 Note, if you are testing this from India, you’ll need to add some shipping information as well. Check out the details from our forums.
 
 ## Add the Business Logic
